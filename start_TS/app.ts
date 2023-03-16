@@ -51,6 +51,7 @@ if (person.role === Role.AUTHOR) {
 // let favoriteActivities: any[];
 // favoriteActivities = 5; // !!! ERROR !!!
 // any[] 배열로 설정했으나 한 가지 값만 입력할 경우 에러 발생
+// favoriteActivities = ['Sports', 5]; // 에러 발생하지 않음
 
 let favoriteActivities: string[];
 favoriteActivities = ["Sports"];
