@@ -1,4 +1,5 @@
-// export {};
+"use strict";
+exports.__esModule = true;
 // const person: {
 //     name: string;
 //     age: number;
@@ -6,8 +7,13 @@
 var person = {
     name: "Chan",
     age: 30,
-    hobbies: ["Sports", "Cooking"]
+    hobbies: ["Sports", "Cooking"],
+    role: [2, "author"]
 };
+// person.role.push("admin");
+// person.role[1] = 10;
+// person.role = [0, 'admin']
+// person.role = [0, 'admin', 'user'] // !!! ERROR !!!
 var favoriteActivities;
 favoriteActivities = ["Sports"];
 console.log(person.name);
