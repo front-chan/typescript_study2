@@ -44,6 +44,14 @@ if (person.role === Role.AUTHOR) {
 // person.role = [0, 'admin']
 // person.role = [0, 'admin', 'user'] // !!! ERROR !!!
 
+// any 타입
+// let favoriteActivities: any; // 에러 발생하지 않음
+// favoriteActivities = ['Sports', 5]
+
+// let favoriteActivities: any[];
+// favoriteActivities = 5; // !!! ERROR !!!
+// any[] 배열로 설정했으나 한 가지 값만 입력할 경우 에러 발생
+
 let favoriteActivities: string[];
 favoriteActivities = ["Sports"];
 
