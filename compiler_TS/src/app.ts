@@ -1,7 +1,24 @@
 const button = document.querySelector("button")!;
 
-// 주석 처리
-button.addEventListener("click", () => {
+// function clickHandler() {
+//     console.log("Click!!!!");
+// }
+
+function clickHandler(message: string) {
+    console.log("Click!!!! " + message);
+}
+
+if (button) {
+    button.addEventListener("click", clickHandler.bind(null, "Hello World"));
+}
+
+// if (button) {
+//     button.addEventListener("click",() => {
+//         console.log('Click!!!!');
+//     });
+// }
+
+button?.addEventListener("click", () => {
     console.log("click!!!");
 });
 
