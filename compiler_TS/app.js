@@ -1,3 +1,6 @@
 "use strict";
-const userName = "Chan";
-console.log(userName);
+const button = document.querySelector("button");
+button.addEventListener("click", () => {
+    console.log("click!!!");
+});
+const map = new Map();
