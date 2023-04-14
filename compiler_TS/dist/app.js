@@ -17,3 +17,4 @@ button === null || button === void 0 ? void 0 : button.addEventListener("click",
     console.log("click!!!");
 });
 const map = new Map();
+//# sourceMappingURL=app.js.map
