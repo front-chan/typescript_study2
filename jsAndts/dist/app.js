@@ -28,15 +28,23 @@ age = 29;
 //     btn.addEventListener("click", (event) => console.log(event));
 // }
 const hobbies = ["Sports", "Cooking"];
+// const hobby1 = hobbies[0];
+// const hobby2 = hobbies[1];
+// const [hobby1, hobby2] = hobbies;
+const [hobby1, hobby2, ...remainingHobbies] = hobbies;
 console.log(hobbies[0]);
 const activeHobbies = ["Hiking"];
 // activeHobbies.push(hobbies);
 activeHobbies.push(hobbies[0], hobbies[1]);
 activeHobbies.push(...hobbies);
 const person = {
-    name: "Chan",
-    age: 30,
+    firstName: "Chan",
+    ageAge: 30,
 };
+// const { firstName, ageAge } = person;
+const { firstName: fullName, ageAge } = person;
+console.log(fullName, ageAge);
+// console.log(fullName, ageAge, firstName)
 // const copiedPerson = person;
 const copiedPerson = Object.assign({}, person);
 const add = (...numbers) => {
