@@ -3,13 +3,24 @@ const userName = "Chan";
 // userName = "Tim"
 let age = 15;
 age = 29;
-function add(n1, n2) {
-    var result;
-    result = n1 + n2;
-    return result;
-}
+// function add(n1: number, n2: number) {
+//     var result;
+//     result = n1 + n2;
+//     return result;
+// }
 // console.log(result);
 // if (age > 20) {
 //     let isOld = true;
 // }
 // console.log(isOld);
+const add = (a, b) => {
+    return a + b;
+};
+console.log(add(2, 5));
+const printOutput = (output) => console.log(output);
+printOutput(add(5, 2));
+const btn = document.querySelector("button");
+if (btn) {
+    btn.addEventListener("click", () => { });
+    btn.addEventListener("click", (event) => console.log(event));
+}
