@@ -26,3 +26,15 @@ if (btn) {
     btn.addEventListener("click", () => { });
     btn.addEventListener("click", (event) => console.log(event));
 }
+const hobbies = ["Sports", "Cooking"];
+console.log(hobbies[0]);
+const activeHobbies = ["Hiking"];
+// activeHobbies.push(hobbies);
+activeHobbies.push(hobbies[0], hobbies[1]);
+activeHobbies.push(...hobbies);
+const person = {
+    name: "Chan",
+    age: 30,
+};
+// const copiedPerson = person;
+const copiedPerson = Object.assign({}, person);
