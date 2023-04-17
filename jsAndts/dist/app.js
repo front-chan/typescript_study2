@@ -13,9 +13,11 @@ age = 29;
 //     let isOld = true;
 // }
 // console.log(isOld);
-const add = (a, b) => {
-    return a + b;
-};
+// const add = (a: number, b: number) => {
+//     return a + b;
+// };
+const add = (a, b = 1) => a + b;
+console.log(add(5));
 console.log(add(2, 5));
 const printOutput = (output) => console.log(output);
 printOutput(add(5, 2));
